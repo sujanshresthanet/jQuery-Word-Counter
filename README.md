@@ -18,7 +18,7 @@ and we include custom jQuery code in our project with the following code:-
 
 **index.html file**
 
-```
+```html
 <!DOCTYPE html>
 <html>
     <head>
@@ -117,7 +117,7 @@ and we include custom jQuery code in our project with the following code:-
 
 **style.css file**
 
-```
+```css
 /* border box */
 
 html {
@@ -249,7 +249,8 @@ textarea:focus {
 ```
 
 **custom.js file:-**
-```
+
+```js
 "use strict";
 
 // define element variables
