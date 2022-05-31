@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+             jQuery Word Counter
+        </title>
+        <link href="css/style.css" rel="stylesheet">
+        </link>
+    </head>
+    <body>
+        <div class="section-full">
+            <div class="container">
+                <div class="ui-input-container">
+                    <h1>
+                        jQuery Word Counter
+                    </h1>
+                    <label class="ui-form-input-container">
+                        <textarea class="ui-form-input" id="text-input" placeholder="Enter your text here..."></textarea>
+                        <div class="clipboard icon fa fa-copy" id="copyToClipboard-a" title="Copy to clipboard">
+                        </div>
+                        <span class="form-input-label">
+                            Contents
+                        </span>
+                        <small>
+                            Enter your text or paste here to count the characters, words, sentences and paragraphs.
+                        </small>
+                    </label>
+                    <div class="clear-inputs">
+                        <button class="clear-all" onclick="javascript:eraseText();">
+                            Clear all inputs
+                        </button>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="out-wrapper">
+                                <div class="output">
+                                    <div>
+                                        Characters:
+                                        <span id="characterCount">
+                                            0
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="out-wrapper">
+                                <div class="output">
+                                    <div>
+                                        Words:
+                                        <span id="wordCount">
+                                            0
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="out-wrapper">
+                                <div class="output">
+                                    <div>
+                                        Sentences:
+                                        <span id="sentenceCount">
+                                            0
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="out-wrapper">
+                                <div class="output">
+                                    <div>
+                                        Paragraphs:
+                                        <span id="paragraphCount">
+                                            0
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="keywords">
+                            Top keywords:
+                            <div class="container">
+                                <div class="row" id="topKeywords">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-3.6.0.js">
+        </script>
+        <script src="js/custom.js">
+        </script>
+    </body>
+</html>
